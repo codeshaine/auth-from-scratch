@@ -1,0 +1,36 @@
+{
+  "name": "server",
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "migrate-up": "dbmate up",
+    "migrate-down": "dbmate down"
+  },
+  "dependencies": {
+    "@hono/node-server": "^1.13.8",
+    "@types/better-sqlite3": "^7.6.12",
+    "better-sqlite3": "^11.8.1",
+    "hono": "^4.6.20"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.17",
+    "dbmate": "^2.25.0",
+    "dotenv": "^16.4.7",
+    "tsx": "^4.7.1"
+  },
+  "packageManager": "pnpm@10.2.0+sha512.0d27364e0139c6aadeed65ada153135e0ca96c8da42123bd50047f961339dc7a758fc2e944b428f52be570d1bd3372455c1c65fa2e7aa0bfbf931190f9552001",
+  "pnpm": {
+    "ignoredBuiltDependencies": [
+      "better-sqlite3",
+      "better-sqlite3",
+      "better-sqlite3",
+      "esbuild",
+      "esbuild",
+      "esbuild"
+    ],
+    "onlyBuiltDependencies": [
+      "better-sqlite3",
+      "esbuild"
+    ]
+  }
+}
